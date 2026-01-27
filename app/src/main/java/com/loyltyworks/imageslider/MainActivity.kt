@@ -1,7 +1,6 @@
 package com.loyltyworks.imageslider
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -16,7 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -33,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             SlideModel("https://picsum.photos/800/400?image=10")
         )
         imageList.add(
-            SlideModel("https://picsum.photos/800/400?image=20")
+            SlideModel("https://picsum.photos/800/400?image=-0")
         )
         imageList.add(
             SlideModel("https://picsum.photos/800/400?image=30")
