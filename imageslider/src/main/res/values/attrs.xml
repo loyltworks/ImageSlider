@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSliderView">
+
+        <!-- Auto-scrolling -->
+        <attr name="autoCycle" format="boolean" />
+        <attr name="autoCycleDelay" format="integer" />
+        <attr name="autoCyclePeriod" format="integer" />
+
+        <!-- Slider background -->
+        <attr name="sliderBackgroundColor" format="color" />
+
+        <!-- Dot customization -->
+        <attr name="dotSelectedColor" format="color" />
+        <attr name="dotUnselectedColor" format="color" />
+        <attr name="dotSize" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+
+        <!-- Slider padding -->
+        <attr name="sliderPaddingStart" format="dimension" />
+        <attr name="sliderPaddingEnd" format="dimension" />
+
+        <!-- Image scale type -->
+        <attr name="imageScaleType">
+            <enum name="fitXY" value="0" />
+            <enum name="centerCrop" value="1" />
+            <enum name="fitCenter" value="2" />
+        </attr>
+
+        <!-- Optional text overlay -->
+        <attr name="textOverlayColor" format="color" />
+        <attr name="textOverlaySize" format="dimension" />
+
+        <!-- Optional description alignment -->
+        <attr name="textAlign">
+            <enum name="LEFT" value="0"/>
+            <enum name="CENTER" value="1"/>
+            <enum name="RIGHT" value="2"/>
+        </attr>
+
+    </declare-styleable>
+</resources>
