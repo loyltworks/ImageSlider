@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             SlideModel("https://picsum.photos/800/400?image=30")
         )
 
+
         // ✅ Pass list to library
         binding.imageSlider.setImageList(imageList)
 
