@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         // ✅ Pass list to library
         binding.imageSlider.setImageList(imageList)
 
+
         binding.imageSlider.onImageClick = { position, model ->
             // model.imageUrl available here
         }
