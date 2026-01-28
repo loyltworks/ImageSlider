@@ -9,7 +9,8 @@ import com.bumptech.glide.Glide
 
 class ImageAdapter(
     private val imageList: ArrayList<SlideModel>,
-    private val listener: OnImageClickListener
+    private val listener: OnImageClickListener,
+    private val scaleType: ImageView.ScaleType = ImageView.ScaleType.FIT_XY
 ) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
 
     interface OnImageClickListener {
@@ -29,8 +30,12 @@ class ImageAdapter(
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val actualPosition = position % imageList.size
 
+        // Set the scale type from attribute
+        holder.imageView.scaleType = scaleType
+
         Glide.with(holder.imageView.context)
             .load(imageList[actualPosition].imageUrl)
+            .error(R.drawable.default_img)
             .into(holder.imageView)
 
         holder.imageView.setOnClickListener {
