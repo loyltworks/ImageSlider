@@ -15,4 +15,5 @@
         android:padding="10dp"
         app:enableAspectRatio="true"
         app:sliderAspectRatio="16:9" />
+
 </LinearLayout>
