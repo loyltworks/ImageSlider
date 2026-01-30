@@ -58,7 +58,7 @@ class ImageSliderView @JvmOverloads constructor(
 
         viewPager = findViewById(R.id.viewPager)
         dotContainer = findViewById(R.id.dotContainer)
-
+        dotContainer.bringToFront()
         attrs?.let {
             val ta = context.obtainStyledAttributes(it, R.styleable.ImageSliderView)
 
