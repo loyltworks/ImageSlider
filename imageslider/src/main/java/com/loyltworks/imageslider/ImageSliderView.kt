@@ -179,6 +179,7 @@ class ImageSliderView @JvmOverloads constructor(
         handler.removeCallbacksAndMessages(null)
         viewPager.unregisterOnPageChangeCallback(pageChangeCallback)
     }
+
 }
 
 /*
